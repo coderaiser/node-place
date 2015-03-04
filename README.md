@@ -19,6 +19,18 @@ place('README.md', 'one', 'two', function(error) {
 });
 ```
 
+## Global
+
+`place` could be used as global when install with `-g` flag:
+
+```
+npm i place -g
+```
+And used this way:
+```
+Usage: place [filename] [from] [to]
+```
+
 ## License
 
 MIT
