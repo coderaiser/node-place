@@ -3,8 +3,7 @@
 (function() {
     'use strict';
     
-    var path            = require('path'),
-        place           = require('..'),
+    var place           = require('..'),
         args            = process.argv.slice(2),
         arg             = args[0];
         
@@ -27,8 +26,7 @@
     }
     
     function main(name, from, to) {
-        var cwd         = getPath(name),
-            filename    = path.normalize(cwd + name);
+        var filename    = getPath(name);
         
         if (!from)
             error('from could not be empty!');
