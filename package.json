@@ -11,6 +11,9 @@
   "keywords": [
     "replace"
   ],
+  "bin": {
+    "place" : "bin/place.js"
+  },
   "scripts": {},
   "subdomain": "place",
   "dependencies": {},
