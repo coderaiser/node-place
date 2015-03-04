@@ -1,6 +1,6 @@
 {
   "name": "place",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "replace data in file",
   "homepage": "http://coderaiser.github.io/node-place",
@@ -12,7 +12,7 @@
     "replace"
   ],
   "bin": {
-    "place" : "bin/place.js"
+    "place": "bin/place.js"
   },
   "scripts": {},
   "subdomain": "place",
