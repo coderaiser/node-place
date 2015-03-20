@@ -20,7 +20,7 @@
         var reg = /^(~|\/)/;
         
         if (!reg.test(name))
-            name = process.cwd() + '/';
+            name = process.cwd() + '/' + name;
         
         return name;
     }
