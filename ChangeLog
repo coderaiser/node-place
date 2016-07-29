@@ -1,3 +1,9 @@
+2016.07.29, v1.2.0
+
+feature:
+- (place) add RegExp support
+
+
 2015.03.20, v1.1.4
 
 fix:
