@@ -1,3 +1,9 @@
+2016.07.29, v1.2.1
+
+fix:
+- (package) bin: place-legacy
+
+
 2016.07.29, v1.2.0
 
 feature:
