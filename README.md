@@ -17,6 +17,11 @@ place('README.md', 'one', 'two', function(error) {
     if (error)
         console.error(error.message);
 });
+
+place('README.md', /one/, 'two', function(error) {
+    if (error)
+        console.error(error.message);
+});
 ```
 
 ## Global
@@ -34,3 +39,4 @@ Usage: place [filename] [from] [to]
 ## License
 
 MIT
+

@@ -28,6 +28,15 @@ test('place: write', (t) => {
     t.end();
 });
 
+test('place: regexp', (t) => {
+    fs.readFile = (name, enc, callback) => callback(null, 'hello world');
+    
+    place('1.txt', '^hello', 'hi', callback);
+    
+    t.ok(fs.writeFile.calledWithMatch('1.txt', 'hi world'), 'callback should have been called');
+    t.end();
+});
+
 test('place: error', (t) => {
     const fn = sinon.stub();
     
@@ -44,10 +53,10 @@ test('place: arguments: no', (t) => {
     t.end();
 });
 
-test('place: arguments: "from" is not a string', (t) => {
-    const fn = () => place('1.txt');
+test('place: arguments: "from" is regexp', (t) => {
+    const fn = () => place('1.txt', RegExp('hello'));
     
-    t.throws(fn, /"from" should be a string!/, 'should throw when "from" is not a string');
+    t.throws(fn, /"from" should be a string or RegExp!/, 'should throw when "from" is not a string');
     t.end();
 });
 
